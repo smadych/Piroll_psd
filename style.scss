@@ -13,13 +13,14 @@
     src: url(fonts/Nunito_Sans/NunitoSans-Regular.ttf);
 }
 
-        // header nav
-
 * {
-    border: 1px solid black;
+   // border: 1px solid black;
    // margin: 0 auto;
     padding: 0;
 }
+        // header nav
+
+
 
 .wrapper-nav {
     background: url(images/bg_header2.jpg) no-repeat center;
@@ -168,10 +169,60 @@
 
         // adventages
 
-
-
+.wrapper-advetages {
+    height: 240px;
+    background-color: #10c9c3;
+    .navbar-expand-lg {
+        height: 100%;
+        .navbar-collapse {
+            .container {
+                padding: 0;
+                .navbar-nav {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .nav-item {
+                        display: flex;
+                        img {
+                            padding: 12px 15px 12px 0;
+                        }
+                        .card-body, .card-title, .card-text {
+                            padding: 0;
+                            margin: 0;
+                            
+                        }
+                        .card-title {
+                            font-family: Montserrat_Medium;
+                            font-weight: 100;
+                            font-size: 18px;
+                            line-height: 30px;
+                            letter-spacing: 0.003em;
+                            color: white;
+                        }
+                        .card-text {
+                            font-family: Montserrat_Medium;
+                            font-size: 12px;
+                            line-height: 30px;
+                            letter-spacing: 0.01em;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
         // adventages end
+
+        //  products
+
+.wrapper-products {
+    .col-md-3 {
+        padding: 0;
+    }
+}
+        // products end
 
 
        

@@ -11,7 +11,6 @@
   src: url(fonts/Nunito_Sans/NunitoSans-Regular.ttf);
 }
 * {
-  border: 1px solid black;
   padding: 0;
 }
 
@@ -132,6 +131,51 @@
 }
 .wrapper-professional-skills .text-left img {
   margin-bottom: 20px;
+}
+
+.wrapper-advetages {
+  height: 240px;
+  background-color: #10c9c3;
+}
+.wrapper-advetages .navbar-expand-lg {
+  height: 100%;
+}
+.wrapper-advetages .navbar-expand-lg .navbar-collapse .container {
+  padding: 0;
+}
+.wrapper-advetages .navbar-expand-lg .navbar-collapse .container .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrapper-advetages .navbar-expand-lg .navbar-collapse .container .navbar-nav .nav-item {
+  display: flex;
+}
+.wrapper-advetages .navbar-expand-lg .navbar-collapse .container .navbar-nav .nav-item img {
+  padding: 12px 15px 12px 0;
+}
+.wrapper-advetages .navbar-expand-lg .navbar-collapse .container .navbar-nav .nav-item .card-body, .wrapper-advetages .navbar-expand-lg .navbar-collapse .container .navbar-nav .nav-item .card-title, .wrapper-advetages .navbar-expand-lg .navbar-collapse .container .navbar-nav .nav-item .card-text {
+  padding: 0;
+  margin: 0;
+}
+.wrapper-advetages .navbar-expand-lg .navbar-collapse .container .navbar-nav .nav-item .card-title {
+  font-family: Montserrat_Medium;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.003em;
+  color: white;
+}
+.wrapper-advetages .navbar-expand-lg .navbar-collapse .container .navbar-nav .nav-item .card-text {
+  font-family: Montserrat_Medium;
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: white;
+}
+
+.wrapper-products .col-md-3 {
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
