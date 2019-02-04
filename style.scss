@@ -14,16 +14,14 @@
 }
 
 * {
-   // border: 1px solid black;
-   // margin: 0 auto;
+    // border: 1px solid black;
+    // margin: 0 auto;
     padding: 0;
 }
         // header nav
 
-
-
 .wrapper-nav {
-    background: url(images/bg_header2.jpg) no-repeat center;
+    background: url(images/mihaly-koles-1339068-unsplash.jpg) no-repeat center;
     margin: 0 auto;
     padding: 0;
 }
@@ -72,7 +70,7 @@
         font-size: 18px;
         line-height: 28px;
         letter-spacing: 0.005em;
-        color: #787878;
+        color: #1d1d1d;
         margin-bottom: 40px;
     }
     .btn {
@@ -80,7 +78,6 @@
         font-size: 12px;
         //line-height: 84px;
         letter-spacing: 0.01em;
-        //font-weight: bold;
         font-family: Montserrat_Medium;
         border-radius: 0;
         border: none;
@@ -88,6 +85,7 @@
         &:hover {
             color: white;
             background-color: #10c9c3;
+            transition: 0.2s ease-out;
         }
     }
 }
@@ -97,7 +95,7 @@
         // about us section
 
 .wrap-about-us {
-    height: 420px;
+    height: 350px;
     background-color: #ffffff;
     .container {
         margin: 0 auto;
@@ -131,7 +129,7 @@
     background: url(images/bg_7.jpg) no-repeat center;
     height: 570px;
     .professional-skills-content {
-        background-color: #ffffff;
+        background-color: #f8f9f9;
         height: inherit;
     }
     .text-left {
@@ -220,9 +218,344 @@
 .wrapper-products {
     .col-md-3 {
         padding: 0;
+        .recent {
+            position: relative;
+            display: block;
+            &:hover .info {
+                display: block !important;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: url(images/pe-7s-look.png) no-repeat center rgba(0, 0, 0, 0.7);
+
+            }
+        }
+    }
+}
+
+.load-more {
+    height: 100px;
+    width: 100%;
+    background-color: #f5f5f5;
+    h6 {
+       padding-top: 50px; 
+       font-family: Montserrat_Medium;
+       font-size: 12px;
+       letter-spacing: 0.1em;
+       color: #8e8e8e;
     }
 }
         // products end
 
+        // work process
+.wrapper-work-process {
+    height: 930px;
+    .h3 {
+        margin: 70px 0 20px 0;
+        color: #191919;
+        font-family: Montserrat_Medium;
+        font-size: 30px;
+        line-height: 60px;
+        letter-spacing: 0.001em;
+    }
 
+    .h6 {
+        margin: 0 auto;
+        width: 50%;
+        color: #787878;
+        font-family: Montserrat_Medium;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.005em;
+    }
+    .container {
+        margin-top: 40px;
+        .video-block {
+            height: inherit;
+            position: relative;
+            .play-button {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                .play-btn {
+                    display: block;
+                    position: absolute;
+                    top: 47.5%;
+                    left: 47.5%;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    background: #10c9c3 url(images/arrow1.png) no-repeat center;
+                }
+            }
+        }
+    }
+    
+}
+        // work process end
        
+        // benefits
+
+.wrapper-benefits {
+    background-color: #f5f5f5;
+    .container {
+        margin: 0 auto;
+
+        .col-md-3:nth-child(1), .col-md-3:nth-child(2), .col-md-3:nth-child(3), .col-md-3:nth-child(4) {
+            margin: 100px 0 25px 0;  
+        }
+
+        .col-md-3:nth-child(5), .col-md-3:nth-child(6), .col-md-3:nth-child(7), .col-md-3:nth-child(8) {
+            margin: 0 0 100px 0;      
+        }
+
+        .card {
+            border: none;
+            .card-img {
+                background-color: #f5f5f5;
+            }
+            .card-body {
+                //padding: 0;
+                background-color: #f5f5f5;
+                .card-title {
+                    width: 75%;
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                    color: #191919;
+                    font-family: Montserrat_Medium;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 30px;
+                    letter-spacing: 0.1em;
+                    background-color: #f5f5f5;
+                    //font-weight: bold;
+                }
+                .card-text {
+                    width: 100%;
+                    color: #787878;
+                    font-family: NunitoSans_Regular;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.005em;
+                    background-color: #f5f5f5;
+                }
+            }
+        }
+    }
+}
+
+        // benefits end
+
+        // quotes
+.wrapper-quotes {
+    background-color: #10c9c3;
+    .carousel-indicators li {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+    }
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                .quote-block {
+                    background-color: #10c9c3;
+                    height: 500px;
+                    .col-md-8 {
+                        background-color: #10c9c3;
+                        padding: 0;
+                        position: relative;
+                        .quote-content {
+                            background-color: #10c9c3;
+                            margin: 0 auto;
+                            position: absolute;
+                            top: 37.5%;
+                            height: auto;
+                            font-family: Montserrat_Medium;
+                            font-weight: normal;
+                            color: #fff;
+                            h4 {
+                                background-color: #10c9c3;
+                                font-size: 24px;
+                                line-height: 36px;
+                                letter-spacing: 0.01em;
+                                //padding-bottom: 20px;
+                            }
+                            h6 {
+                                background-color: #10c9c3;
+                                font-size: 12px;
+                                line-height: 36px;
+                                letter-spacing: 0.1em;
+                                
+                            }
+                            h4, h6 {
+                                padding: 0 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+       
+        // quotes end
+
+        // Partners
+.wrapper-partners {
+    .row {
+        .col-md-2 {
+            margin: 50px 0;
+        }
+      .img-fluid {
+          display: block;
+          margin: 0 auto;
+          //width: 100%;
+          height: 100%;
+      }  
+    }
+}
+@media only screen and (max-width: 767px) {
+    .wrapper-partners {
+        .row {
+            .col-md-2  {
+      margin: 10px 0;
+    }
+  }
+}
+}
+        
+        // Partners end
+
+        // Contact form
+
+.contact-form {
+   // height: 750px;
+    background-color: #f5f5f5;
+    .container {
+        padding: 50px;
+        form {
+            
+            .col-md-8 {
+                margin: 0 auto;
+                h1 {
+                   color: #1d1d1d;
+                   font-family: Montserrat_Medium;
+                   font-size: 30px;
+                   line-height: 84px;
+                   letter-spacing: 0.001em;
+                }
+                h6 {
+                    color: #787878;
+                    font-family: NunitoSans_Regular;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.005em;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+        .row {
+            .col-md-10 {
+                margin: 0 auto;
+                
+                .form-control {
+                    color: #787878;
+                    font-family: NunitoSans_Regular;
+                    font-size: 15px;
+                    line-height: 24px;
+                    letter-spacing: 0.001em;
+                    border: none;
+                    border-radius: 0;
+                }
+                .title {
+                    .col {
+                        padding: 0;
+                        margin-bottom: 30px;
+                    }
+                }
+                
+                .form-row {
+                    margin: 0 auto;
+                    margin-bottom: 30px;
+                    .col {
+                        margin: 0 auto;
+                        padding: 0; 
+                    }
+                    .col:nth-child(1) {
+                        margin-right: 0.5em;
+                        border-radius: 0;
+                    }
+                    .col:nth-child(2) {
+                        margin-left: 0.5em;
+                        border-radius: 0;
+                    }
+                }
+                
+                .form-group-comment {
+                    margin-bottom: 30px;
+                    .form-control {
+                        height: 170px;
+                        border-radius: 0;
+                    }
+                }
+                .btn {
+                    width: auto;
+                    margin: 0 auto;
+                    border-radius: 0;
+                    font-family: Montserrat_Medium;
+                    font-size: 12px;
+                    //line-height: 84px;
+                    letter-spacing: 0.1em;
+                    padding: 20px 33px;
+                    color: white;
+                    background-color: #10c9c3;
+                }
+            }
+        }
+    }
+}
+        // Contact form end
+
+        // footer
+.page-footer {
+    background-color: #000000;
+    height: 285px;
+    .container {
+        margin-top: 3em;
+        h5 {
+            color: white;
+            font-family: Montserrat_Medium;
+            font-size: 18px;
+            margin-top: 0;
+            letter-spacing: 0.01em;
+        }
+        p {
+            color: #bcbcbc;
+            font-family: NunitoSans_Regular;
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: 0.005em;
+        }
+        .list-unstyled {
+            li {
+                a {
+                    color: #bcbcbc;
+                    font-family: NunitoSans_Regular;
+                    font-size: 15px;
+                    line-height: 24px;
+                    letter-spacing: 0.005em;
+                }
+            }
+        }
+    }
+    .row {
+        .col-md-3 {
+            
+        }
+    }
+}
+        // footer end
